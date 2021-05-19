@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(gray, black);
+}
+section{
+    width: 225px;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@keyframes test{
+    0% {background-color:transparent; left:0px; top:0px;}
+    5.5% {background-color: rgb(36, 36, 194);left:0px; top:200px;}
+    11% {background-color: transparent;left:0px; top:0px;}
+    16.5% {background-color: rgb(224, 23, 23);left:0px; top:-200px;}
+    22% {background-color: transparent;left:0px; top:0px;}
+    27.5% {background-color: rgb(219, 131, 15);left:200px; top:0px;}
+    33% {background-color: transparent;left:0px; top:0px;}
+    38.5% {background-color:rgb(29, 74, 223);left:-200px; top:0px;}
+    44% {background-color: transparent;left:0px; top:0px;}
+    49.5% {background-color: rgb(27, 233, 9);left:200px; top:200px;}
+    55% {background-color: transparent;left:0px; top:0px;}
+    60.5% {background-color: rgb(165, 16, 165);left:-200px; top:-200px;}
+    66% {background-color:transparent;left:0px; top:0px;}
+    71.5% {background-color:rgb(25, 124, 216);left:-200px; top:200px;}
+    77% {background-color:transparent;left:0px; top:0px;}
+    82.5% {background-color:rgb(201, 28, 100);left:200px; top:-200px;}
+    88% {background-color:transparent;left:0px; top:0px;}
+}
+div{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    display: flex;
+    position: relative;
+}
+.white-box{
+    background-color:transparent;
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+div:hover{
+    background-image: radial-gradient( purple, blueviolet);
+}
